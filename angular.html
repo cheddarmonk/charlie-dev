@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>hi angular</title>
+    <title>Angular Dev</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -10,21 +10,24 @@
 </head>
 
 <body ng-app="hi-angular">
+    <div id="background">
     <div class="container-fluid" ng-controller="MainController">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <a href="">link to my repo</a>
-                <a href="/file">go here to see how you can write a file to the server</a>
+                <a href="https://github.com/cheddarmonk/charlie-dev" target="_blank">Link to the Repo</a>
+                <text> | </text>
+                <a href="/file" target="_blank">Writing Files to Server</a>
             </div>
         </div>
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <h1 id="page-title">hi angular</h1>
+                <h1 id="page-title">Angular Dev Lab</h1>
                 <input ng-model="user.name">
-                <h3 id="user-greeting">and hi there, {{ user.name }}</h3>
-                <p id="user-car">A {{ user.car }}? Noice.</p>
+                <h3 id="user-greeting">Hello There, {{ user.name }}!!</h3>
+                <p id="user-car">Is this the {{ user.car }}? I did Kessell run in under 12 Parsecs in this!</p>
             </div>
         </div>
+    </div>
     </div>
 
     <script>
@@ -46,6 +49,15 @@
         body {
             min-height: 100vh;
             background-color: #e8e8e8;
+                   
+        }
+
+        #background {
+            background-image: url('https://wallpaperaccess.com/full/1581974.jpg');
+            background-color: rgba(255,255,255,0.6);
+            background-blend-mode: lighten;
+            width: 1920px;
+            height: 1080px;
         }
         
         .container {
